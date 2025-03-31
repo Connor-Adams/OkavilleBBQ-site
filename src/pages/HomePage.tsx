@@ -51,7 +51,7 @@ const HomePage = () => {
                 <Award className="h-8 w-8 text-amber-700" />
               </div>
               <h3 className="text-xl font-semibold text-amber-900 mb-2">Premium Quality</h3>
-              <p className="text-gray-600">We use only the finest ingredients and traditional smoking methods.</p>
+              <p className="text-gray-600">We use only the finest ingredients and equipment.</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
