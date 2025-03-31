@@ -6,6 +6,8 @@ import HomePage from './pages/HomePage';
 import MenuPage from './pages/MenuPage';
 import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
+import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
 
@@ -23,6 +25,8 @@ function App() {
         </main>
         <Footer />
       </div>
+      <Analytics />
+      <SpeedInsights />
     </Router>
   );
 }
