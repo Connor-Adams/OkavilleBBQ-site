@@ -8,7 +8,6 @@ import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Analytics } from '@vercel/analytics/react';
-import 'dotenv/config';
 
 
 function App() {
