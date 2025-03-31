@@ -34,7 +34,7 @@ const HomePage = () => {
               <div className="inline-block p-3 bg-amber-100 rounded-full mb-4">
                 <ChefHat className="h-8 w-8 text-amber-700" />
               </div>
-              <h3 className="text-xl font-semibold text-amber-900 mb-2">Expert Pitmasters</h3>
+              <h3 className="text-xl font-semibold text-amber-900 mb-2">Expert Grillmasters</h3>
               <p className="text-gray-600">Our team brings decades of experience in authentic BBQ techniques.</p>
             </div>
             
@@ -66,7 +66,7 @@ const HomePage = () => {
       </section>
 
       {/* Menu Preview Section */}
-      <section className="py-16">
+      {/* <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-amber-900 mb-4">Our Signature BBQ</h2>
@@ -125,10 +125,10 @@ const HomePage = () => {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonials Section */}
-      <section className="py-16 bg-amber-900 text-white">
+      {/* <section className="py-16 bg-amber-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12">What Our Customers Say</h2>
           
@@ -155,7 +155,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-16 bg-amber-100">

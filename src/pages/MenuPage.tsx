@@ -16,7 +16,7 @@ const packages: Package[] = [
   {
     name: "School Event",
     description: "Perfect for School Barbeque or Funfair!",
-    minimumCost: 1300,
+    minimumCost: 0,
     meats: [
       "Tasty Burger",
       "Large Hot Dog",
