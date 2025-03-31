@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 
 type FormData = {
   name: string;
@@ -50,7 +50,7 @@ const ContactPage = () => {
                     <Phone className="h-6 w-6 text-amber-600 mr-4 mt-1" />
                     <div>
                       <h3 className="font-semibold text-gray-900">Phone</h3>
-                      <p className="text-gray-600">(555) 123-4567</p>
+                      <p className="text-gray-600">(905) 338-3459</p>
                     </div>
                   </div>
                   
@@ -58,7 +58,8 @@ const ContactPage = () => {
                     <Mail className="h-6 w-6 text-amber-600 mr-4 mt-1" />
                     <div>
                       <h3 className="font-semibold text-gray-900">Email</h3>
-                      <p className="text-gray-600">info@oakvillebbq.com</p>
+                      <p className="text-gray-600">store039@mmfoodmartket.com</p>
+                      <p className="text-gray-600">bbqoakville@gmail.com</p>
                     </div>
                   </div>
                   
@@ -66,11 +67,12 @@ const ContactPage = () => {
                     <MapPin className="h-6 w-6 text-amber-600 mr-4 mt-1" />
                     <div>
                       <h3 className="font-semibold text-gray-900">Location</h3>
-                      <p className="text-gray-600">123 Smoke St, Oakville, ON</p>
+                      <p className="text-gray-600">M&M Food Market</p>
+                      <p className="text-gray-600">2163 Sixth Line, Oakville, ON</p>
                     </div>
                   </div>
                   
-                  <div className="flex items-start">
+                  {/* <div className="flex items-start">
                     <Clock className="h-6 w-6 text-amber-600 mr-4 mt-1" />
                     <div>
                       <h3 className="font-semibold text-gray-900">Business Hours</h3>
@@ -78,10 +80,10 @@ const ContactPage = () => {
                       <p className="text-gray-600">Saturday: 10am - 3pm</p>
                       <p className="text-gray-600">Sunday: Closed</p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 
-                <div className="mt-8 pt-8 border-t border-gray-200">
+                {/* <div className="mt-8 pt-8 border-t border-gray-200">
                   <h3 className="font-semibold text-gray-900 mb-4">Follow Us</h3>
                   <div className="flex space-x-4">
                     <a href="#" className="text-amber-600 hover:text-amber-800 transition">
@@ -100,7 +102,7 @@ const ContactPage = () => {
                       </svg>
                     </a>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
             
@@ -181,8 +183,7 @@ const ContactPage = () => {
                         <option value="">Select Event Type</option>
                         <option value="Wedding">Wedding</option>
                         <option value="Corporate">Corporate Event</option>
-                        <option value="Birthday">Birthday Party</option>
-                        <option value="Family">Family Gathering</option>
+                        <option value="Birthday">School Event</option>
                         <option value="Other">Other</option>
                       </select>
                       {errors.eventType && <p className="mt-1 text-sm text-red-600">{errors.eventType.message}</p>}

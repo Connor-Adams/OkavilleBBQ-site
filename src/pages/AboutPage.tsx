@@ -96,7 +96,7 @@ const AboutPage = () => {
       </section>
 
       {/* Meet the Team */}
-      <section className="py-16">
+      {/* <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-amber-900 text-center mb-12">Meet Our Team</h2>
           
@@ -147,10 +147,10 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Our Process */}
-      <section className="py-16 bg-amber-100">
+      {/* <section className="py-16 bg-amber-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-amber-900 text-center mb-12">Our BBQ Process</h2>
           
@@ -224,14 +224,14 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-16 bg-amber-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Experience Authentic BBQ?</h2>
+          <h2 className="text-3xl font-bold mb-6">Ready to Experience Oakville BBQ?</h2>
           <p className="text-xl text-amber-200 mb-8 max-w-3xl mx-auto">
-            Let us bring our passion for BBQ to your next event. Contact us today for a custom quote.
+            Let us bring our passion for  to your next event. Contact us today for a custom quote.
           </p>
           <Link to="/contact" className="inline-block bg-white hover:bg-amber-100 text-amber-900 font-bold py-3 px-8 rounded-lg transition duration-300 text-lg">
             Get in Touch

@@ -32,20 +32,20 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center">
                 <Phone className="h-4 w-4 mr-2 text-amber-400" />
-                <span className="text-amber-200">(555) 123-4567</span>
+                <span className="text-amber-200">(905) 338-3459</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-4 w-4 mr-2 text-amber-400" />
-                <span className="text-amber-200">info@oakvillebbq.com</span>
+                <span className="text-amber-200">store039@mmfoodmartket.com & bbqoakville@gmail.com</span>
               </li>
               <li className="flex items-center">
                 <MapPin className="h-4 w-4 mr-2 text-amber-400" />
-                <span className="text-amber-200">123 Smoke St, Oakville, ON</span>
+                <span className="text-amber-200">2163 Sixth Line, Oakville, ON</span>
               </li>
             </ul>
           </div>
           
-          <div>
+          {/* <div>
             <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
               <a href="#" className="text-amber-200 hover:text-white transition">
@@ -58,7 +58,7 @@ const Footer = () => {
                 <Twitter className="h-6 w-6" />
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
         
         <div className="mt-8 pt-8 border-t border-amber-800 text-center text-sm text-amber-300">

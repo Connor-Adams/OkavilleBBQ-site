@@ -24,7 +24,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-4">
             <Link to="/" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-amber-800 transition duration-150">Home</Link>
             <Link to="/menu" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-amber-800 transition duration-150">Menu</Link>
-            <Link to="/about" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-amber-800 transition duration-150">About</Link>
+            {/* <Link to="/about" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-amber-800 transition duration-150">About</Link> */}
             <Link to="/contact" className="px-3 py-2 rounded-md text-sm font-medium bg-amber-600 hover:bg-amber-700 transition duration-150">Get a Quote</Link>
           </div>
           
@@ -58,13 +58,13 @@ const Navbar = () => {
             >
               Menu
             </Link>
-            <Link 
+            {/* <Link 
               to="/about" 
               className="block px-3 py-2 rounded-md text-base font-medium hover:bg-amber-800"
               onClick={() => setIsOpen(false)}
             >
               About
-            </Link>
+            </Link> */}
             <Link 
               to="/contact" 
               className="block px-3 py-2 rounded-md text-base font-medium bg-amber-600 hover:bg-amber-700"
