@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { Phone, Mail, MapPin } from 'lucide-react';
+import { supabase } from '../util/supabaseClient';
 
 type FormData = {
   name: string;
@@ -16,11 +17,19 @@ type FormData = {
 const ContactPage = () => {
   const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
 
-  const onSubmit = (data: FormData) => {
-    console.log(data);
-    // In a real application, you would send this data to your backend
-    alert('Thank you for your inquiry! We will get back to you shortly.');
-    reset();
+  const onSubmit = async (data: FormData) => {
+
+    const { error } = await supabase.from('contactform').insert([data]);
+
+
+    if (error) {
+      console.error('Error saving data:', error.message);
+      alert('There was an error submitting the form.');
+    } else {
+      alert('Thank you for your inquiry! We will get back to you shortly.');
+      reset();
+    }
+   
   };
 
   return (

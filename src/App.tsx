@@ -8,6 +8,7 @@ import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
 
 function App() {
+
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
