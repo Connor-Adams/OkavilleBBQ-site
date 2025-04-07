@@ -9,9 +9,9 @@ const HomePage = () => {
       <section className="relative h-[80vh] bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80')" }}>
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
         <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">Premium BBQ Catering</h1>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">BBQ Catering</h1>
           <p className="text-xl md:text-2xl text-amber-200 mb-8 max-w-2xl">
-            Bringing authentic, slow-smoked flavors to your events. From backyard parties to corporate gatherings.
+            Bringing authentic, rich flavors to your events. From backyard parties to corporate gatherings.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link to="/menu" className="inline-block bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 text-center">
@@ -162,7 +162,7 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-amber-900 mb-4">Ready to Elevate Your Event?</h2>
           <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
-            Let us bring the smoky, delicious flavors of authentic BBQ to your next gathering. Get in touch for a custom quote.
+            Let us bring the delicious flavors of authentic BBQ to your next gathering. Get in touch for a custom quote.
           </p>
           <Link to="/contact" className="inline-block bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 text-lg">
             Request a Quote
