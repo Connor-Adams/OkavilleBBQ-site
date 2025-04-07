@@ -67,7 +67,6 @@ const ContactPage = () => {
                     <Mail className="h-6 w-6 text-amber-600 mr-4 mt-1" />
                     <div>
                       <h3 className="font-semibold text-gray-900">Email</h3>
-                      <p className="text-gray-600">store039@mmfoodmartket.com</p>
                       <p className="text-gray-600">bbqoakville@gmail.com</p>
                     </div>
                   </div>
@@ -190,10 +189,10 @@ const ContactPage = () => {
                         {...register('eventType', { required: 'Event type is required' })}
                       >
                         <option value="">Select Event Type</option>
-                        <option value="Wedding">Wedding</option>
                         <option value="Corporate">Corporate Event</option>
                         <option value="Birthday">School Event</option>
-                        <option value="Other">Other</option>
+                        <option value="Backyard Party">Backyard Party</option>
+                        <option value="Sporting Event">Sporting Event</option>
                       </select>
                       {errors.eventType && <p className="mt-1 text-sm text-red-600">{errors.eventType.message}</p>}
                     </div>
