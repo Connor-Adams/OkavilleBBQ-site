@@ -13,7 +13,7 @@ const Footer = () => {
               <span className="ml-2 text-xl font-bold">Oakville BBQ</span>
             </div>
             <p className="mt-2 text-sm text-amber-200">
-              Premium BBQ catering for events of all sizes. Bringing smoky, delicious flavors to your special occasions.
+              Premium BBQ catering for events of all sizes. Bringing delicious flavors to your special occasions.
             </p>
           </div>
           
@@ -22,7 +22,6 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/" className="text-amber-200 hover:text-white transition">Home</Link></li>
               <li><Link to="/menu" className="text-amber-200 hover:text-white transition">Menu</Link></li>
-              {/* <li><Link to="/about" className="text-amber-200 hover:text-white transition">About Us</Link></li> */}
               <li><Link to="/contact" className="text-amber-200 hover:text-white transition">Get a Quote</Link></li>
             </ul>
           </div>
@@ -44,23 +43,8 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          
-          {/* <div>
-            <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
-            <div className="flex space-x-4">
-              <a href="#" className="text-amber-200 hover:text-white transition">
-                <Instagram className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-amber-200 hover:text-white transition">
-                <Facebook className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-amber-200 hover:text-white transition">
-                <Twitter className="h-6 w-6" />
-              </a>
-            </div>
-          </div> */}
         </div>
-        
+    
         <div className="mt-8 pt-8 border-t border-amber-800 text-center text-sm text-amber-300">
           <p>&copy; {new Date().getFullYear()} Oakville BBQ. All rights reserved.</p>
         </div>
