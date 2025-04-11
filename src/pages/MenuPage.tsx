@@ -43,6 +43,7 @@ const packages: Package[] = [
       "Regular & Diet Soda"
     ],
     additionalFeatures: [
+      "Meals are served as a combo, including one grilled item, one beverage, and one bag of chips",
       "We come with 25% extra supply to cover any day of sales",
       "Meals come served in a disposable burger bag",
       "Pre orders are required 3 full days prior to the event date",
