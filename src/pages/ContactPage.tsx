@@ -260,32 +260,37 @@ const ContactPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-amber-900 mb-3">How far in advance should I book?</h3>
-              <p className="text-gray-600">We recommend booking at least 2-3 weeks in advance for smaller events, and 1-2 months for larger events like weddings. Peak season (summer months) may require even earlier booking.</p>
+              <p className="text-gray-600">We recommend booking as far in advance as possible—our spots get filled quickly!</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-amber-900 mb-3">Do you provide staffing for events?</h3>
-              <p className="text-gray-600">Yes, we offer professional serving staff for events. This service is included in our Corporate and Wedding packages, and can be added to other packages for an additional fee.</p>
+              <p className="text-gray-600">Yes, we offer professional serving staff for events. This service is included in our Corporate package.</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-amber-900 mb-3">Can you accommodate dietary restrictions?</h3>
-              <p className="text-gray-600">Absolutely! We can accommodate various dietary needs including vegetarian, gluten-free, and dairy-free options. Please let us know your requirements when requesting a quote.</p>
+              <p className="text-gray-600">Absolutely! We can accommodate various dietary needs including vegetarian, and gluten-free. Please let us know your requirements when requesting a quote.</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-amber-900 mb-3">What is your service area?</h3>
-              <p className="text-gray-600">We primarily serve the Oakville area and surrounding regions within a 50-mile radius. For events beyond this area, additional travel fees may apply.</p>
+              <p className="text-gray-600">We primarily serve the Halton and Peel Regions.</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-amber-900 mb-3">Do you require a deposit?</h3>
-              <p className="text-gray-600">Yes, we require a 25% deposit to secure your date, with the balance due one week before the event. For events booked within two weeks, full payment is required at booking.</p>
+              <p className="text-gray-600">No deposit needed! We’ll send you an invoice after the event wraps up.</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-amber-900 mb-3">What is your cancellation policy?</h3>
-              <p className="text-gray-600">Cancellations made 14+ days before the event receive a full deposit refund. Cancellations 7-13 days before receive a 50% deposit refund. Cancellations less than 7 days before the event are non-refundable.</p>
+              <p className="text-gray-600">Cancellations must be made 7 days before the event.</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-amber-900 mb-3">What is your rain policy?</h3>
+              <p className="text-gray-600">We operate rain or shine, as such no rain dates can be provided</p>
             </div>
           </div>
         </div>
