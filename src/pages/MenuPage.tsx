@@ -8,6 +8,8 @@ type Package = {
   meats: string[];
   salads: string[];
   desserts: string[];
+  chips: string[];
+  condements: string [];
   drinks: string[];
   additionalFeatures: string[];
 };
@@ -15,17 +17,25 @@ type Package = {
 const packages: Package[] = [
   {
     name: "School Event",
-    description: "Perfect for School Barbeque or Funfair!",
+    description: "Perfect for Meet the Teacher Night, a school barbeque, or a funfair!",
     minimumCost: 0,
     meats: [
-      "Tasty Burger",
+      "Beef Tasty Burger",
       "Large Hot Dog",
-      "Veggie Burger"
+      "Veggie Burger",
+      "Halal Beef Burger",
+      "Large Halah Chicken Hot Dog"
     ],
     salads: [
     ],
-    desserts: [
-      "Chips"
+    chips: [
+      "Choice of one 28 gram bag"
+    ],
+    desserts: [],
+    condements: [
+      "Ketchup",
+      "Mustard",
+      "Relish"
     ],
     drinks: [
       "Bottled Water",
@@ -34,7 +44,8 @@ const packages: Package[] = [
     ],
     additionalFeatures: [
       "We come with 25% extra supply to cover any day of sales",
-      "Disposable plates, utensils, and napkins",
+      "Meals come served in a disposable burger bag",
+      "Pre orders are required 3 full days prior to the event date",
       "2-hour serving duration"
     ]
   },
@@ -47,26 +58,37 @@ const packages: Package[] = [
       "Chicken Breast Grill",
       "Halal Beef Burger",
       "Veggie Burger",
-      "Sausage" 
+      "Sausage"
     ],
     salads: [
       "Classic Caesar",
       "Macaroni",
-      "Pototao", 
+      "Pototao",
       "Coleslaw"
     ],
     desserts: [
       "Assorted Dessert Squares"
     ],
+    chips:[],
     drinks: [
       "Regular & Diet Soda",
       "Juice",
       "Bottled Water"
     ],
     additionalFeatures: [
-      "Professional staff",
-      "Premium disposable dinnerware",
+      "Disposable plates, utensils, and napkins",
       "Setup and cleanup"
+    ],
+    condements: [
+      "Ketchup",
+      "Mustard",
+      "Relish",
+      "BBQ Sauce",
+      "Sliced Cheese",
+      "Tomatoes",
+      "Pickles",
+      "Hot Peppers",
+      "Onions"
     ]
   }
 ];
@@ -80,7 +102,7 @@ const MenuPage = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Catering Packages</h1>
           <p className="text-xl text-amber-200 max-w-3xl mx-auto">
-            Customizable BBQ packages for any occasion, featuring our signature grilled meats and homemade sides.
+            Customizable BBQ packages for any occasion.
           </p>
         </div>
       </section>
@@ -150,6 +172,19 @@ const MenuPage = () => {
                     </ul>
                   </div>
                 )}
+                {pkg.chips?.length > 0 && (
+                  <div>
+                    <h3 className="text-xl font-semibold text-amber-900 mb-4">Chips</h3>
+                    <ul className="space-y-2">
+                      {pkg.chips.map((item, i) => (
+                        <li key={i} className="flex items-center text-gray-700">
+                          <span className="h-2 w-2 bg-amber-500 rounded-full mr-3"></span>
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
 
                 {pkg.drinks?.length > 0 && (
                   <div>
@@ -164,12 +199,26 @@ const MenuPage = () => {
                     </ul>
                   </div>
                 )}
+
+{pkg.condements?.length > 0 && (
+                  <div>
+                    <h3 className="text-xl font-semibold text-amber-900 mb-4">Condiments</h3>
+                    <ul className="space-y-2">
+                      {pkg.condements.map((item, i) => (
+                        <li key={i} className="flex items-center text-gray-700">
+                          <span className="h-2 w-2 bg-amber-500 rounded-full mr-3"></span>
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
 
               {/* Additional Features */}
               {pkg.additionalFeatures?.length > 0 && (
                 <div className="mt-8">
-                  <h3 className="text-xl font-semibold text-amber-900 mb-4">Additional Features</h3>
+                  <h3 className="text-xl font-semibold text-amber-900 mb-4">Additional Details</h3>
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                     {pkg.additionalFeatures.map((item, i) => (
                       <li key={i} className="flex items-center text-gray-700">
