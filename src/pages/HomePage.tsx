@@ -1,10 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ChefHat, Users, Award, Clock } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
+
 
 const HomePage = () => {
   return (
     <div>
+
+      <Helmet>
+        <title>Oakville BBQ - Premium BBQ Catering</title>
+        <meta
+          name="description"
+          content="Oakville BBQ provides premium BBQ catering services for events of all sizes. "
+        />
+        <link rel="canonical" href="https://oakvillebbq.com/" />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="relative h-[80vh] bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80')" }}>
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
