@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://oakvillebbq.com/sitemap.xml
